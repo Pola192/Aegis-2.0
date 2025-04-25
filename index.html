@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aegis - Coques haut de gamme pour ordinateurs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <!-- En-tête du site -->
+     <div class="eldiablos">
+        <header class="header">
+            <div>
+                <a href="#"><img class="logo" src="Logo_Aegis_Noir.svg" alt="logo"></a>
+            </div>
+    
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">Appareils</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Héritage</a></li>
+                    <li><a href="#">À propos</a></li>
+                </ul>
+            </nav>
+    
+            <div class="cta-icons">
+                <a href="#" class="icon"><img src="./src/icons/fas fa-shopping-cart.svg" alt=""></a>
+                <a href="#" class="icon"><img src="./src/icons/fas fa-user.svg" alt=""></a>
+                <a href="#" class="icon"><img src="./src/icons/fas fa-search.svg" alt=""></a>
+            </div>
+        </header>
+    
+        <!-- Section héro -->
+        <section class="hero">
+            <h2>Coques haut de gamme pour ordinateurs portables.</h2>
+            <h1>L'ÉLÉGANCE PROTECTRICE.<br>L'EXCLUSIVITÉ EN ÉDITION LIMITÉE.</h1>
+            <a href="#" class="hero-button">Découvrir</a>
+        </section>
+     </div>
+   
+
+    <!-- Section collections -->
+    <section class="collections">
+        <h2>EXPLOREZ NOS COLLECTIONS</h2>
+        <p>trouvez la coque qui reflète votre style</p>
+        
+        <div class="collection-grid">
+            <a href="" class="collection-item" id="image1">
+                <h3>Collection Standard</h3>
+                <p>sobre et intemporelle</p>
+                <button class="collection-button">Voir</button>
+            </a>
+            <a href="" class="collection-item" id="image-artiste">
+                <h3>Collection Artistique</h3>
+                <p>collaborations en édition limitée</p>
+                <button class="collection-button">Voir</button>
+            </a>
+            <a href="" class="collection-item" id="image-heriatge">
+                <p>Gravures personnalisables*</p>
+                <h3>Collection Heritage</h3>
+                <p>exclusivité et savoir-faire</p>
+                <button class="collection-button">Voir</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section signature -->
+    <section class="signature">
+        <h2>BIEN PLUS QU'UNE COQUE, UNE SIGNATURE.</h2>
+        <p>Fabriquées à la main en France, nos coques pour ordinateurs portables combinent design exceptionnel et fonction pour protéger vos modèles coûteux avec style et sublimer votre ordinateur. Protection exclusive et matériaux premium sont au cœur de nos collections.</p>
+    </section>
+
+    <!-- Section fixation -->
+    <section class="fixation">
+        <div style="width: 50%;">
+                <h3>Une fixation magnétique unique</h3>
+            <p>Grâce à un système d'aimants intégrés, nos coques s'adaptent parfaitement à votre ordinateur. Une solution à la fois élégante et pratique.</p>
+        </div>
+        <div class="fixation-images blocimg-hauteur">
+            <div class="fixation-image"></div>
+        </div>
+    </section>
+
+    <!-- Section matériaux -->
+    <section class="materiaux">
+        <div class="materiaux-images blocimg-hauteur">
+            <div class="materiaux-image"></div>
+            <div class="materiaux-image"></div>
+        </div>
+        <div class="materiaux-details">
+            <h2>Matériaux premium</h2>
+            <h4>Nubuck Standard & Collaborations</h4>
+            <p>Fabriqué en protéines naturelles durables, ces coques offrent une résistance supérieure aux taches, à l'eau et à l'usure. Chaque motif est soigneusement imprimé pour une finition haute-qualité.</p>
+            
+            <h4>Nubuck Haut de gamme</h4>
+            <p>D'apparence luxueuse, notre finition haut de gamme offre une protection alvéolaire et structurelle. Chaque coque est faite à la main par nos artisans pour garantir une protection élégante et fonctionnelle.</p>
+        </div>
+    </section>
+
+    <!-- Section vidéo -->
+    <section class="video-section">
+        <video class="video" src="./sr/video/Terrafina stoneware by ceramirupe.mp4">
+            
+        </video>
+        <div class="video-placeholder">
+            <div class="play-button">
+            
+              <img src="src/icons/play-bonton.svg" alt="Icône de lecture" class="play-svg">
+            </div>
+          </div>
+        <div class="video-container">
+          <div class="video-content">
+            <div class="video-text">
+                <h2 class="video-title">UNE FABRICATION D'EXCEPTION</h2>
+                <p class="video-description">
+                Derrière chaque coque, un savoir-faire unique. Découvrez en vidéo l'artisanat et 
+                les matériaux qui font d'Aegis une référence en matière de protection haut de 
+                gamme.
+                </p>
+            </div>
+            <div class="video-container-cta">
+                <a href="#" class="video-cta">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Section produits -->
+ 
+    <section>
+        <div class="selecteur">
+            <div id="meilleurs" class="active">Meilleurs ventes</div>
+            <div id="nouveautes">Nouveautés</div>
+        </div>
+        
+            <div class="bestseller-container">
+              
+              <!-- (div.bestseller_card>img+div.bestseller-card-info>h3+(div.stars>img.star)+p)*3 "emmet VSC" -->
+              <div class="fleche-left"><img src="./src/icons/fleche_gauche.svg" alt="" srcset=""></div>
+                <div class="bestseller_card">
+                    <div class="card_pastille">
+                        <div class="pastille_container">
+                        <div class="pastille">Bestseller</div>
+                        </div>
+                        <img class="bestseller_product-img" src="" alt="">
+                    </div>
+                    <div class="bestseller-card-info">
+                        <h3>Nom du produit</h3>
+                        <div class="stars">
+                            <img src="./src/icons/star.svg" alt="" class="star">
+                            <img src="./src/icons/star.svg" alt="" class="star">
+                            <img src="./src/icons/star.svg" alt="" class="star">
+                            <img src="./src/icons/star.svg" alt="" class="star">
+                            <img src="./src/icons/star.svg" alt="" class="star">
+                        </div>
+                        <p>69,89€ TTC</p>
+                    </div>
+                </div>
+                <div class="bestseller_card">
+                <img class="bestseller_product-img not" src="" alt="">
+                <div class="bestseller-card-info">
+                    <h3>Nom du produit</h3>
+                    <div class="stars">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                    </div>
+                    <p> <span id="old_price">69,89€</span> 59,89€ TTC</p>
+                </div>
+                </div>
+                <div class="bestseller_card">
+                <img class="bestseller_product-img not" src="" alt="">
+                <div class="bestseller-card-info">
+                    <h3>Nom du produit</h3>
+                    <div class="stars">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star.svg" alt="" class="star">
+                        <img src="./src/icons/star_border.svg" alt="" class="star">
+                    </div>
+                    <p> <span id="old_price">69,89€</span> 59,89€ TTC</p>
+                </div>
+                </div>
+              <div class="fleche-right"><img src="./src/icons/fleche_droite.svg" alt="" srcset=""></div>
+            </div>
+    </section>
+    
+    <!-- Section communauté -->
+    <section class="communaute">
+        <h2>REJOINS LA COMMUNAUTÉ</h2>
+        <p>pour découvrir les prochaines collaborations en avant-première.</p>
+        <div class="instagram">
+            <div class="insta-icon">
+                <!-- Logo Instagram en SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="white">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+            </div>
+            <a href="#" class="insta-link">@aegis</a>
+        </div>
+        <div class="instagram-gallery-container" id="caroussel">
+            <div class="instagram-gallery">
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+                <div class="insta-image"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section avantages -->
+    <section class="avantages">
+        <div class="avantage">
+            <img class="icon-shipping" src="src/icons/icon-shipping.svg" alt="icon-shipping">
+            <h4>Livraison offerte</h4>
+            <h5>sous conditions*</h5>    
+        </div>
+        <div class="avantage">
+            <img class="icon-service" src="src/icons/icon-service.svg" alt="icon-service">
+            <h4>PAIEMENT SÉCURISÉ</h4>
+        </div>
+        <div class="avantage">
+            <img class="icon-quality" src="src/icons/icon-quality.svg" alt="icon-quality">
+            <h4>QUALITÉ PREMIUM</h4>
+        </div>
+        <div class="avantage">
+            <img class="icon-returns" src="src/icons/icon-returns.svg" alt="icon-returns">
+            <h4>GARANTIE 2 ANS*</h4>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <!-- Colonne 1 : À propos de nous -->
+                <div class="footer-column">
+                    <h3>À propos de nous</h3>
+                    <ul>
+                        <li><a href="#">Coques Intemporelles</a></li>
+                        <li><a href="#">Collaborations Exclusives</a></li>
+                        <li><a href="#">Héritage & Luxe</a></li>
+                        <li><a href="#">Présentation de la marque</a></li>
+                        <li><a href="#">Engagement qualité</a></li>
+                        <li><a href="#">Fabrication et savoir-faire</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 2 : Support -->
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support produit</a></li>
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">Suivre ma commande</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 3 : Mentions légales -->
+                <div class="footer-column">
+                    <h3>Mentions légales</h3>
+                    <ul>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Confidentialité des données</a></li>
+                        <li><a href="#">Informations légales</a></li>
+                        <li><a href="#">Gérer vos données</a></li>
+                        <li><a href="#">Propriété intellectuelle</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 4 : Newsletter -->
+                <div class="footer-column">
+                    <h3>S'inscrire à notre Newsletter</h3>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Veuillez entré votre e-mail">
+                        <button>S'inscrire</button>
+                        <p class="newsletter-terms">
+                            En cliquant sur "S'inscrire" vous acceptez de communiquer vos coordonnées afin de recevoir des emails d'informations de la part de Aegis. Vous pouvez à tout moment demander à vous désinscrire de cette newsletter. Plus d'information sur notre <a href="#">politique de confidentialité</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <div class="country-selector">
+                    <img class="flag_france" src="src/icons/Flag_france.svg" alt="flag_france">
+                    <span>France</span>
+                    <img class="dropdown-arrow" src="src/icons/drop_down.svg" alt="dropdown-arrow">
+                </div>
+                
+                <div class="copyright">
+                    Copyright © 2025 Aegis by_Pola Tous droits réservés.
+                </div>
+                
+                <div class="payment-methods">
+                    <img class="visa" src="src/icons/visa.svg" alt="visa">
+                    <img class="paypal" src="src/icons/paypal.svg" alt="paypal">
+                    <img class="apple_pay" src="src/icons/Apple_Pay.svg" alt="apple_pay">
+                    <img class="master_card" src="src/icons/master_card.svg" alt="master_card">
+                    <img class="american-express" src="src/icons/american-express.svg" alt="american-express">
+                    <img class="cb" src="src/icons/cb.svg" alt="cb">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
