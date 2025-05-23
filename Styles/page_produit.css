@@ -35,14 +35,33 @@ body {
     right: 0;
     z-index: 1000;
     transition: background-color 0.3s ease;
+    background-color: white;
 
 
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 68px;  
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: rgb(79, 79, 79);
 }
 
 .logo {
     margin-left: 74px;
     height: 65px;
-    filter: brightness(0) invert(1);
     transition: filter 0.3s ease;
 }
 
@@ -54,13 +73,12 @@ body {
 }
 
 .cta-icons img {
-    filter: brightness(0) invert(1);
     transition: filter 0.3s ease;
 }
 
 .icon {
     font-size: 20px;
-    color: white;
+    color: black;
 }
 
 /* Styles pour le reste des sections */
