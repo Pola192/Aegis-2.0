@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis | Nos Produits</title>
+    <link rel="stylesheet" href="page_produit.css">
+    <script src="page_produit.js"></script>
+</head>
+<body>
+    <!-- En-tête du site -->
+        <header class="header">
+            <div>
+                <a href="#"><img class="logo" src="Logo_Aegis_Noir.svg" alt="logo"></a>
+            </div>
+    
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">Appareils</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Héritage</a></li>
+                    <li><a href="#">À propos</a></li>
+                </ul>
+            </nav>
+    
+            <div class="cta-icons">
+                <a href="#" class="icon"><img src="./src/icons/fas fa-shopping-cart.svg" alt=""></a>
+                <a href="#" class="icon"><img src="./src/icons/fas fa-user.svg" alt=""></a>
+                <a href="#" class="icon"><img src="./src/icons/fas fa-search.svg" alt=""></a>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Section images produit -->
+            <div class="product-images">
+                <div class="main-image">
+                    <div class="placeholder-image"></div>
+                </div>
+                <div class="thumbnail-grid">
+                    <div class="thumbnail active"></div>
+                    <div class="thumbnail"></div>
+                    <div class="thumbnail"></div>
+                    <div class="thumbnail"></div>
+                </div>
+            </div>
+    
+            <!-- Section détails produit -->
+            <div class="product-details">
+                <h1 class="product-title">NOM PRODUIT</h1>
+                <p class="product-subtitle">Nom de la collection</p>
+                <p class="product-price">69,89€ TTC</p>
+    
+                <!-- Sélecteur de modèle -->
+                <div class="selector-group">
+                    <label>Choisir mon appareil</label>
+                    <span class="current-selection">Samsung Galaxy Book4 Ultra</span>
+                    <div class="custom-select" id="modelSelect">
+                        <div class="select-trigger">
+                            <span>Samsung Galaxy Book4 Ultra</span>
+                            <svg class="select-arrow" width="12" height="8" viewBox="0 0 12 8">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="select-options">
+                            <div class="select-option active" data-value="galaxy-book4-ultra">Samsung Galaxy Book4 Ultra</div>
+                            <div class="select-option" data-value="galaxy-book4">Samsung Galaxy Book4</div>
+                            <div class="select-option" data-value="galaxy-book3">Samsung Galaxy Book3</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Sélecteur de taille -->
+                <div class="selector-group">
+                    <div class="custom-select" id="sizeSelect">
+                        <div class="select-trigger">
+                            <span>16 pouces</span>
+                            <svg class="select-arrow" width="12" height="8" viewBox="0 0 12 8">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="select-options">
+                            <div class="select-option active" data-value="16">16 pouces</div>
+                            <div class="select-option" data-value="14">14 pouces</div>
+                            <div class="select-option" data-value="13">13 pouces</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Sélecteur de couleur -->
+                <div class="color-section">
+                    <label>Couleur</label>
+                    <span class="current-color">Transparent</span>
+                    <div class="color-options">
+                        <div class="color-option active" data-color="transparent" style="background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%), linear-gradient(-45deg, transparent 75%, #f0f0f0 75%); background-size: 4px 4px; background-position: 0 0, 0 2px, 2px -2px, -2px 0px;"></div>
+                        <div class="color-option" data-color="rouge" style="background-color: #8B4513;"></div>
+                        <div class="color-option" data-color="vert" style="background-color: #2F4F2F;"></div>
+                        <div class="color-option" data-color="bleu" style="background-color: #ADD8E6;"></div>
+                    </div>
+                </div>
+    
+                <!-- Description -->
+                <div class="description-section">
+                    <h3>Description</h3>
+                    <p>Equitis Romani autem esse filium criminis loco poni ab accusatoribus neque his iudicantibus oportuit neque defendentibus nobis. Nam quod de pietate dixistis, est quidem ista nostra existimatio, sed iudicium certae parentis; quid nos opinemur, audietis ex iuratis; quid parentes sentiant, lacrimae matris incredibilisque maestor, squalor patris et haec praesens maestitia, quam cernitis, luctusque declarat.</p>
+                </div>
+    
+                <!-- Contrôle quantité -->
+                <div class="quantity-section">
+                    <button class="quantity-btn" id="decreaseBtn">-</button>
+                    <span class="quantity-display" id="quantityDisplay">1</span>
+                    <button class="quantity-btn" id="increaseBtn">+</button>
+                </div>
+    
+                <!-- Boutons d'action -->
+                <div class="action-buttons">
+                    <button class="hero-button add-to-cart">Ajouter au panier</button>
+                    <button class="hero-button buy-now">Acheter</button>
+                </div>
+    
+                <!-- Sections dépliantes -->
+                <div class="collapsible-sections">
+                    <div class="collapsible-item">
+                        <div class="collapsible-header" data-target="caracteristiques">
+                            <span>Caractéristiques</span>
+                            <div class="expand-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M8 4V12M4 8H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="collapsible-content" id="caracteristiques">
+                            <p>Matériau premium résistant aux chocs et aux rayures. Compatible avec la charge sans fil. Design ultra-fin qui préserve l'esthétique de votre appareil.</p>
+                        </div>
+                    </div>
+    
+                    <div class="collapsible-item">
+                        <div class="collapsible-header" data-target="composition">
+                            <span>Composition</span>
+                            <div class="expand-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M8 4V12M4 8H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="collapsible-content" id="composition">
+                            <p>TPU flexible 60%, Polycarbonate rigide 35%, Revêtement anti-empreintes 5%. Certifié sans BPA et matériaux recyclables.</p>
+                        </div>
+                    </div>
+    
+                    <div class="collapsible-item">
+                        <div class="collapsible-header" data-target="livraisons">
+                            <span>Livraisons et retours</span>
+                            <div class="expand-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M8 4V12M4 8H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="collapsible-content" id="livraisons">
+                            <p>Livraison gratuite dès 50€ d'achat. Expédition sous 24-48h. Retours gratuits sous 30 jours. Service client disponible 7j/7.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
