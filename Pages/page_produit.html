@@ -31,37 +31,35 @@
             </div>
         </header>
 
-        <div class="container">
-            <!-- Section images produit -->
-            <div class="product-images">
-                <div class="main-image">
-                    <div class="placeholder-image"></div>
+        <section class="product">
+            <div class="container">
+                <div class="product-images">
+                    <div class="main-image">
+                        <div class="placeholder-image"></div>
+                    </div>
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail"></div>
+                        <div class="thumbnail"></div>
+                    </div>
                 </div>
-                <div class="thumbnail-grid">
-                    <div class="thumbnail active"></div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                </div>
-            </div>
-    
-            <!-- Section détails produit -->
-            <div class="product-details">
-                <h1 class="product-title">NOM PRODUIT</h1>
-                <p class="product-subtitle">Nom de la collection</p>
-                <p class="product-price">69,89€ TTC</p>
-    
-                <!-- Sélecteur de modèle -->
+    <!-- Section détails produit -->
+        <div class="product-details">
+            <h1 class="product-title">NOM PRODUIT</h1>
+            <p class="product-subtitle">Nom de la collection</p>
+            <p class="product-price">69,89€ TTC</p>
+    <div class="selectors-inline">
+            <!-- Sélecteur de modèle -->
+            <div class="selector">
                 <div class="selector-group">
                     <label>Choisir mon appareil</label>
-                    <span class="current-selection">Samsung Galaxy Book4 Ultra</span>
-                    <div class="custom-select" id="modelSelect">
-                        <div class="select-trigger">
-                            <span>Samsung Galaxy Book4 Ultra</span>
-                            <svg class="select-arrow" width="12" height="8" viewBox="0 0 12 8">
-                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                            </svg>
-                        </div>
+                        <span class="current-selection">Samsung Galaxy Book4 Ultra</span>
+                        <div class="custom-select" id="modelSelect">
+                            <div class="select-trigger">
+                                <span>Samsung Galaxy Book4 Ultra</span>
+                                <svg class="select-arrow" width="12" height="8" viewBox="0 0 12 8">
+                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                </svg>
+                            </div>
                         <div class="select-options">
                             <div class="select-option active" data-value="galaxy-book4-ultra">Samsung Galaxy Book4 Ultra</div>
                             <div class="select-option" data-value="galaxy-book4">Samsung Galaxy Book4</div>
@@ -69,24 +67,28 @@
                         </div>
                     </div>
                 </div>
+            </div>
     
-                <!-- Sélecteur de taille -->
-                <div class="selector-group">
-                    <div class="custom-select" id="sizeSelect">
-                        <div class="select-trigger">
-                            <span>16 pouces</span>
-                            <svg class="select-arrow" width="12" height="8" viewBox="0 0 12 8">
-                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                            </svg>
-                        </div>
-                        <div class="select-options">
-                            <div class="select-option active" data-value="16">16 pouces</div>
-                            <div class="select-option" data-value="14">14 pouces</div>
-                            <div class="select-option" data-value="13">13 pouces</div>
-                        </div>
+            <!-- Sélecteur de taille -->
+            <div class="selector-group">
+                <div class="custom-select" id="sizeSelect">
+                    <div class="select-trigger">
+                        <span>16 pouces</span>
+                        <svg class="select-arrow" width="12" height="8" viewBox="0 0 12 8">
+                            <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="select-options">
+                        <div class="select-option active" data-value="16">16 pouces</div>
+                        <div class="select-option" data-value="14">14 pouces</div>
+                        <div class="select-option" data-value="13">13 pouces</div>
                     </div>
                 </div>
-    
+            </div>
+    </div>
+
+    </div>
+</section>
                 <!-- Sélecteur de couleur -->
                 <div class="color-section">
                     <label>Couleur</label>
