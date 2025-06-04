@@ -390,39 +390,59 @@ section {
 }
 
 /* Contrôle quantité */
-.quantity-section {
+
+.counter-container {
+    width: 129px;
+    height: 38px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    gap: 16px;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 
-.quantity-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid #2c2c2c;
-    background: transparent;
+.counter-button {
+    background: none;
+    border: none;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    color: #333333;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease;
 }
 
-.quantity-btn:hover {
-    background-color: #2c2c2c;
-    color: white;
+.counter-button:hover {
+    color: #515151;
+    transform: scale(1.1);
 }
 
-.quantity-display {
-    font-size: 18px;
-    font-weight: 600;
-    min-width: 30px;
+.counter-button:active {
+    transform: scale(0.95);
+}
+
+.counter-display {
+    font-size: 14px;
+    color: #333333;
+    min-width: 20px;
     text-align: center;
+}
+
+.counter-button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.counter-button:disabled:hover {
+    color: #ccc;
+    transform: none;
 }
 
 /* Boutons d'action */
