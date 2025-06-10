@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Ertoria;
-    src: url("./src/erstoria.otf") format('opentype');
+    src: url("../src/erstoria.otf") format('opentype');
 }
 
 /* Reset et styles de base - Conservation de votre reset */
@@ -20,6 +20,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 .eldiablos {
@@ -189,7 +190,10 @@ section{
 
 /* Section héro */
 .hero {
-    /* background-color: #e6e6e6; */
+    background-image: url("../src/img/Bannière.jpg");
+    background-size: cover;
+    background-position: center;
+    border-image-width: 150%;
     margin: 0;
     padding: 0px 100px;
     text-align: left;
@@ -218,7 +222,6 @@ section{
 }
 
 .hero-button {
-    background-color: transparent;
     border: 1px solid #ffffff;
     width: 295px;
     height: 38px;
@@ -237,7 +240,7 @@ section{
 
 .hero-button:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: black;
 }
 
 /* Section collections */
@@ -281,14 +284,20 @@ section{
     align-items: flex-start;
 }
 
+#image1 {
+    background-image: url("../src/img/coque-aegis-basique-face.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #image-heriatge {
-    background-image: url("src/img/coque-aegis-cuir-face.jpg");
+     background-image: url("../src/img/coque-aegis-cuir-face.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #image-artiste {
-    background-image: url("src/img/coque-aegis-artiste-face.jpg");
+    background-image: url("../src/img/coque-aegis-artiste-face.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -321,7 +330,10 @@ section{
 }
 
 .collection-button:hover {
-    background-color: #333;
+    background-color: #ffffff00;
+    color: #000;
+    border: 1px solid #000000;
+    font-weight: 400;
 }
 
 /* Section signature */
@@ -379,7 +391,8 @@ section{
 
 .fixation-image {
     flex: 1;
-    background-color: #D9D9D9; /* Couleur pour les emplacements d'images */
+    background-image: url("../src/img/4-full-protection.jpg");
+    background-size: cover;
     border-radius: 30px;
 }
 
@@ -403,7 +416,8 @@ section{
     flex: 1;
     width: calc(50% - 10px);
     aspect-ratio: 1/1;
-    background-color: #D9D9D9; /* Couleur pour les emplacements d'images */
+    background-image: url("../src/img/VM_10M-C_6453aafe-6da6-4071-bbd4-d3ae954e3294.jpg");
+    background-size: cover;
     border-radius: 30px;
 }
 
@@ -446,8 +460,8 @@ video {
     
     height: 640px;
     object-fit: cover;
-    background-color: #000;
-
+    background-image: url("../src/img/travail-du-cuir-au-tannage-vegetal-le-cuir-et-les-outils-d-artisanat.jpg");
+    background-size: cover;
 }
 
 
@@ -681,7 +695,7 @@ video {
 
     .pastille {
         margin: 20px 0px 0px 25px;
-        background-color: #000;
+        background-color: #121F48;
         color: #fff;
         padding: 10px 26px;
         border-radius: 1000px;

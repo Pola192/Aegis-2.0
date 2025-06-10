@@ -3,7 +3,7 @@ let currentQuantity = 1;
 const colorNames = {
     'transparent': 'Transparent',
     'rouge': 'Rouge',
-    'vert': 'Vert',
+    'vert': 'Vert deau',
     'bleu': 'Bleu'
 };
 
