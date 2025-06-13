@@ -50,21 +50,37 @@ body {
 
 .header:hover {
     background-color: white;
-filter: none;
-.icon {
-    color: #444647; /* Retour à la couleur originale */
-}
-.cta-icons img {
-    filter: none; /* Retour à la couleur originale */
-}.header-nav a:hover {
-    color: #444647; /* Votre couleur de survol originale */
-}.header-nav a {
-    color: black; /* Retour au noir */
-}.header-nav a {
-    color: black; /* Retour au noir */
-}.logo {
-    filter: none; /* Retour à la couleur originale */
-}
+    filter: none;
+
+    .icon {
+        color: #444647;
+        /* Retour à la couleur originale */
+    }
+
+    .cta-icons img {
+        filter: none;
+        /* Retour à la couleur originale */
+    }
+
+    .header-nav a:hover {
+        color: #444647;
+        /* Votre couleur de survol originale */
+    }
+
+    .header-nav a {
+        color: black;
+        /* Retour au noir */
+    }
+
+    .header-nav a {
+        color: black;
+        /* Retour au noir */
+    }
+
+    .logo {
+        filter: none;
+        /* Retour à la couleur originale */
+    }
 }
 
 .logo {
@@ -78,7 +94,7 @@ filter: none;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 68px;  
+    gap: 68px;
 }
 
 .header-nav a {
@@ -115,32 +131,42 @@ filter: none;
 }
 
 .header-scrolled .logo {
-    filter: none; /* Retour à la couleur originale */
+    filter: none;
+    /* Retour à la couleur originale */
 }
 
 .header-scrolled .header-nav a {
-    color: black; /* Retour au noir */
+    color: black;
+    /* Retour au noir */
 }
 
 .header-scrolled .header-nav a:hover {
-    color: #444647; /* Votre couleur de survol originale */
+    color: #444647;
+    /* Votre couleur de survol originale */
 }
 
 .header-scrolled .cta-icons img {
-    filter: none; /* Retour à la couleur originale */
+    filter: none;
+    /* Retour à la couleur originale */
 }
 
 .header-scrolled .icon {
-    color: #444647; /* Retour à la couleur originale */
+    color: #444647;
+    /* Retour à la couleur originale */
 }
 
 /* Styles pour le reste des sections */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Ertoria', serif;
     font-weight: normal;
 }
 
-p, button, input {
+p,
+button,
+input {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -160,12 +186,17 @@ button {
 }
 
 /* Styles pour le reste des sections */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Ertoria', serif;
     font-weight: normal;
 }
 
-p, button, input {
+p,
+button,
+input {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -184,7 +215,7 @@ button {
     background: none;
 }
 
-section{
+section {
     margin: 0 100px;
 }
 
@@ -270,7 +301,8 @@ section{
 }
 
 .collection-item {
-    background-color: #D9D9D9; /* Couleur pour les emplacements d'images */
+    background-color: #D9D9D9;
+    /* Couleur pour les emplacements d'images */
     box-sizing: border-box;
     padding: 0px 30px 60px;
     text-align: center;
@@ -291,7 +323,7 @@ section{
 }
 
 #image-heriatge {
-     background-image: url("../src/img/coque-aegis-cuir-face.jpg");
+    background-image: url("../src/img/coque-aegis-cuir-face.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -359,15 +391,16 @@ section{
 }
 
 :root {
-    --block-height: 40vh; /* Hauteur relative à la hauteur de la fenêtre */
-  }
+    --block-height: 40vh;
+    /* Hauteur relative à la hauteur de la fenêtre */
+}
 
 /* Section fixation */
 .fixation {
     margin-top: 50px;
     display: flex;
     gap: 20px;
-    height:var(--block-height); 
+    height: var(--block-height);
 }
 
 .fixation h3 {
@@ -402,23 +435,29 @@ section{
     background-color: #fff;
     display: flex;
     gap: 20px;
-    max-height:  var(--block-height);
+    max-height: var(--block-height);
 
 }
 
-.materiaux-images{
+.materiaux-images {
     width: 50%;
     display: flex;
     gap: 20px;
 }
 
-.materiaux-image{
+.materiaux-image {
     flex: 1;
     width: calc(50% - 10px);
     aspect-ratio: 1/1;
-    background-image: url("../src/img/VM_10M-C_6453aafe-6da6-4071-bbd4-d3ae954e3294.jpg");
+    
     background-size: cover;
     border-radius: 30px;
+}
+#materiaux-image-1 {
+ background-image: url("../src/img/VM_10M-C_6453aafe-6da6-4071-bbd4-d3ae954e3294.jpg");
+}
+#materiaux-image-2 {
+ background-image: url("../src/img/coque-aegis-artiste-face.jpg");
 }
 
 .materiaux h2 {
@@ -427,7 +466,7 @@ section{
     font-family: 'Ertoria', serif;
 }
 
-.materiaux-details{
+.materiaux-details {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -457,7 +496,7 @@ video {
     /* bottom: 0; */
     z-index: -1;
     width: 100%;
-    
+
     height: 640px;
     object-fit: cover;
     background-image: url("../src/img/travail-du-cuir-au-tannage-vegetal-le-cuir-et-les-outils-d-artisanat.jpg");
@@ -472,69 +511,69 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .video-container {
+}
+
+.video-container {
     display: flex;
     width: 100%;
     height: 440px;
     align-items: flex-end;
     justify-content: center;
 
-  }
-  
-  .video-placeholder {
+}
+
+.video-placeholder {
     position: absolute;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-  }
-  
-  .play-button {
+}
+
+.play-button {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .play-svg {
+}
+
+.play-svg {
     width: 75px;
     height: 75px;
-  }
-  
-  .video-content {
+}
+
+.video-content {
     display: flex;
     flex-direction: row;
-  }
+}
 
 
 
-  .video-text{
+.video-text {
     padding: 0px 100px;
     text-align: left;
     width: 75%;
     color: white;
-  }
-  
-  .video-title {
+}
+
+.video-title {
     font-size: 32px;
     margin-bottom: 10px;
-  }
-  
-  .video-description {
+}
+
+.video-description {
     max-width: 800px;
     line-height: 1.6;
-  }
+}
 
-  .video-container-cta{
+.video-container-cta {
     padding: 0px 100px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 25%;
-  }
-  
-  .video-cta {
+}
+
+.video-cta {
     display: inline-block;
     padding: 8px 26px;
     border: 1px solid #ffffff;
@@ -543,12 +582,12 @@ video {
     color: #ffffff;
     font-size: 14px;
     transition: all 0.3s ease;
-  }
-  
-  .video-cta:hover {
+}
+
+.video-cta:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-  }
+}
 
 /* Section produits */
 .carousel-container {
@@ -591,10 +630,11 @@ video {
     height: 2px;
     background-color: #000;
 }
+
 /* Section Bestseller */
 
-.selecteur{
-    font-size:'Poppins', sans-serif;
+.selecteur {
+    font-size: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 21px;
     display: flex;
@@ -608,26 +648,34 @@ video {
     border-bottom: 3px solid #000000;
     border-radius: 0;
     position: relative;
-  }
-  
-  /* Petits cercles aux extrémités pour créer un effet d'arrondi */
-  .active::before, .active::after {
+}
+
+/* Petits cercles aux extrémités pour créer un effet d'arrondi */
+.active::before,
+.active::after {
     content: "";
     position: absolute;
-    bottom: -3px; /* Aligner avec le bord inférieur */
-    height: 3px; /* Même épaisseur que la bordure */
-    width: 3px; /* Même largeur que l'épaisseur */
-    background-color: #000000; /* Même couleur que la bordure */
-    border-radius: 50%; /* Forme circulaire */
-  }
-  
-  .active::before {
-    left: -1px; /* Ajuster la position pour une transition fluide */
-  }
-  
-  .active::after {
-    right: -1px; /* Ajuster la position pour une transition fluide */
-  }
+    bottom: -3px;
+    /* Aligner avec le bord inférieur */
+    height: 3px;
+    /* Même épaisseur que la bordure */
+    width: 3px;
+    /* Même largeur que l'épaisseur */
+    background-color: #000000;
+    /* Même couleur que la bordure */
+    border-radius: 50%;
+    /* Forme circulaire */
+}
+
+.active::before {
+    left: -1px;
+    /* Ajuster la position pour une transition fluide */
+}
+
+.active::after {
+    right: -1px;
+    /* Ajuster la position pour une transition fluide */
+}
 
 .bestseller-container {
     display: flex;
@@ -636,7 +684,7 @@ video {
     align-items: center;
 }
 
-.selecteur{
+.selecteur {
     margin-top: 100px;
 }
 
@@ -653,11 +701,11 @@ video {
         transition: transform 0.3s ease;
         width: -webkit-fill-available;
     }
-    
+
     .card_pastille:hover {
         transform: translateY(-5px);
     }
-    
+
     .bestseller_product-img {
         background-color: #D9D9D9;
         border-radius: 30px;
@@ -666,13 +714,13 @@ video {
         margin-bottom: 20px;
     }
 
-    .bestseller_product-img:is(.not):hover{
+    .bestseller_product-img:is(.not):hover {
         transition: transform 0.3s ease;
         transform: translateY(-5px);
 
-        
+
     }
-    
+
     h3 {
         font-family: 'Ertoria', sans-serif;
         font-size: 28px;
@@ -796,7 +844,11 @@ video {
     padding: 50px 100px 50px 100px;
 }
 
-.avantage, .icon-shipping, .icon-service, .icon-quality, .icon-returns {
+.avantage,
+.icon-shipping,
+.icon-service,
+.icon-quality,
+.icon-returns {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -816,10 +868,13 @@ video {
     }
 }
 
-.icon-shipping, .icon-service, .icon-quality, .icon-returns {
+.icon-shipping,
+.icon-service,
+.icon-quality,
+.icon-returns {
     width: 35px;
     margin-bottom: 20px;
-} 
+}
 
 
 /* Pied de page */
